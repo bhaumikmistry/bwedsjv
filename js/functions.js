@@ -75,9 +75,8 @@ $('.contact-us').click(function(){
 
     $('.contact-us .direction').css({'height':'33vh'});
     $('.contact-us .direction .addr').css({'height':'33vh'});
-    document.getElementById("addr-text-h").innerHTML = "Hall <br> Empire Banquet, 12 Timestar House, S V Rd, Goregaon West, Mumbai"
-    document.getElementById("addr-text-u").innerHTML = "Utaro  <br> Spanish Villa, Patel Estate Rd, Momin Nagar, Jogeshwari West, Mumbai"
-    document.getElementById("addr-text-r").innerHTML = "Reception <br> FM Banquet, 8/B Udyog Nagar, Kamath Lane, Goregaon West, Mumbai"
+    document.getElementById("addr-text-h").innerHTML = "Home <br> C/11, Giriraj society, Road No 6, mamlatdarwadi, Malad West, Mumbai"
+    document.getElementById("addr-text-r").innerHTML = "Hall <br> Empire Banquet, 12 Timestar House, S V Rd, Goregaon West, Mumbai"
 
 
 

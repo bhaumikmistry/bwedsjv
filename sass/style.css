@@ -1239,13 +1239,13 @@ figure {
       margin: 12% auto;
       background-color: none; }
       .invite-pages .invite-page-3 .wedding-text-holder #wedding {
-        margin-top: -20px;
+        margin-top: 20px;
         color: #010101;
         font-family: Snell Roundhand;
         opacity: 0.7;
         font-size: 60px; }
       .invite-pages .invite-page-3 .wedding-text-holder #wedding-time-date {
-        margin-top: -25px;
+        margin-top: 5px;
         color: #010101;
         opacity: 0.4;
         font-size: 15px; }
@@ -1261,13 +1261,13 @@ figure {
       margin: 25% auto;
       background-color: none; }
       .invite-pages .invite-page-4 .reception-text-holder #reception {
-        margin-top: 20px;
+        margin-top: -20px;
         color: #010101;
         font-family: Snell Roundhand;
         opacity: 0.7;
         font-size: 60px; }
       .invite-pages .invite-page-4 .reception-text-holder #reception-time-date {
-        margin-top: -5px;
+        margin-top: -25px;
         color: #010101;
         opacity: 0.4;
         font-size: 15px; }
@@ -1507,7 +1507,7 @@ figure {
         float: left; }
         .footer-holder .contact-us .direction .left-text .addr {
           height: 0;
-          width: 33vw;
+          width: 49vw;
           float: left; }
           .footer-holder .contact-us .direction .left-text .addr .one-Hall {
             margin-top: 25%;
@@ -1678,4 +1678,26 @@ figure {
     .timeline ul li:nth-child(odd) div {
       left: 25px; }
     .timeline ul li:nth-child(even) div {
-      left: -169px; } }
+      left: -169px; }
+  .footer-holder .contact-us .direction {
+    height: 0;
+    width: 100%;
+    text-align: center;
+    float: left; }
+    .footer-holder .contact-us .direction .left-text {
+      width: 100%;
+      float: left; }
+      .footer-holder .contact-us .direction .left-text .addr {
+        height: 0;
+        width: 50vw;
+        float: left; }
+        .footer-holder .contact-us .direction .left-text .addr .one-Hall {
+          margin-top: 25%;
+          margin-left: 20%;
+          text-align: center; }
+      .footer-holder .contact-us .direction .left-text #addr-text-r, .footer-holder .contact-us .direction .left-text #addr-text-h, .footer-holder .contact-us .direction .left-text #addr-text-u {
+        font-family: Snell Roundhand;
+        margin-top: -15px;
+        color: #010101;
+        opacity: 0.3;
+        font-size: 18px; } }
