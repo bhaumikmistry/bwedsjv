@@ -1,0 +1,1681 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; } }
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+  .one.column,
+  .one.columns {
+    width: 4.66666666667%; }
+  .two.columns {
+    width: 13.3333333333%; }
+  .three.columns {
+    width: 22%; }
+  .four.columns {
+    width: 30.6666666667%; }
+  .five.columns {
+    width: 39.3333333333%; }
+  .six.columns {
+    width: 48%; }
+  .seven.columns {
+    width: 56.6666666667%; }
+  .eight.columns {
+    width: 65.3333333333%; }
+  .nine.columns {
+    width: 74.0%; }
+  .ten.columns {
+    width: 82.6666666667%; }
+  .eleven.columns {
+    width: 91.3333333333%; }
+  .twelve.columns {
+    width: 100%;
+    margin-left: 0; }
+  .one-third.column {
+    width: 30.6666666667%; }
+  .two-thirds.column {
+    width: 65.3333333333%; }
+  .one-half.column {
+    width: 48%; }
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns {
+    margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns {
+    margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns {
+    margin-left: 26%; }
+  .offset-by-four.column,
+  .offset-by-four.columns {
+    margin-left: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns {
+    margin-left: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns {
+    margin-left: 52%; }
+  .offset-by-seven.column,
+  .offset-by-seven.columns {
+    margin-left: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns {
+    margin-left: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns {
+    margin-left: 78.0%; }
+  .offset-by-ten.column,
+  .offset-by-ten.columns {
+    margin-left: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns {
+    margin-left: 95.3333333333%; }
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns {
+    margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns {
+    margin-left: 69.3333333333%; }
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns {
+    margin-left: 52%; } }
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; }
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+
+h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+  letter-spacing: -.1rem; }
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem; }
+
+h3 {
+  font-size: 3.0rem;
+  line-height: 1.3;
+  letter-spacing: -.1rem; }
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem; }
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem; }
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 {
+    font-size: 5.0rem; }
+  h2 {
+    font-size: 4.2rem; }
+  h3 {
+    font-size: 3.6rem; }
+  h4 {
+    font-size: 3.0rem; }
+  h5 {
+    font-size: 2.4rem; }
+  h6 {
+    font-size: 1.5rem; } }
+
+p {
+  margin-top: 0; }
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #1EAEDB; }
+
+a:hover {
+  color: #0FA0CE; }
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+
+fieldset {
+  padding: 0;
+  border-width: 0; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+  list-style: circle inside; }
+
+ol {
+  list-style: decimal inside; }
+
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+
+li {
+  margin-bottom: 1rem; }
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button,
+.button {
+  margin-bottom: 1rem; }
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem; }
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem; }
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+.u-pull-right {
+  float: right; }
+
+.u-pull-left {
+  float: left; }
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+/* Larger than mobile */
+/* Larger than phablet (also point when grid becomes active) */
+/* Larger than tablet */
+/* Larger than desktop */
+/* Larger than Desktop HD */
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  color: #ccc;
+  weight: 300; }
+
+figure {
+  margin: auto; }
+
+.content {
+  height: 240px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-image: url(../images/graphics/rings.png);
+  background-attachment: fixed; }
+  .content article {
+    padding: 100px 0;
+    height: 240px;
+    margin: 0 auto;
+    text-align: center; }
+    .content article #wedding-details {
+      margin-top: -40px;
+      color: #010101;
+      opacity: 0.5;
+      font-size: 20px;
+      margin-bottom: 0px; }
+    .content article #names {
+      color: #010101;
+      font-family: Georgia;
+      opacity: 0.7;
+      font-size: 60px; }
+    .content article #city-name {
+      margin-top: -30px;
+      color: #010101;
+      opacity: 0.4;
+      font-size: 30px; }
+    .content article #date-wedding {
+      margin-top: -20px;
+      color: #010101;
+      opacity: 0.4;
+      font-size: 20px; }
+
+.image-holder {
+  height: 600px;
+  position: relative;
+  box-shadow: -10px -10px -10px 8px white inset;
+  background-image: url(../images/graphics/back_true.png);
+  background-size: auto 600px;
+  background-position: top center;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  overflow: hidden; }
+
+.border {
+  height: 600px;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  background-size: 100% 600px;
+  background-background-color: inherit;
+  background-image: url(../images/baujeni/border_blur.png);
+  background-repeat: no-repeat;
+  background-background-size: cover;
+  background-postion: top center; }
+
+.blobs {
+  height: 600px;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  background-size: 100% 600px;
+  background-background-color: inherit;
+  background-image: url(../images/graphics/blur_blobs.png);
+  background-repeat: no-repeat;
+  background-background-size: cover;
+  background-postion: top center; }
+
+.logo {
+  height: 300px;
+  width: 300px;
+  z-index: 4;
+  background-size: 100% 100%;
+  background-background-color: inherit;
+  background-image: url(../images/graphics/logo_jb_21.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -150px; }
+
+.humans {
+  height: 600px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background-size: auto 600px;
+  background-background-color: inherit;
+  background-image: url(../images/baujeni/human_layer_with_shadow_nobgrd_black_blur.png);
+  background-repeat: no-repeat;
+  background-postion: top center; }
+
+.count {
+  height: 300px; }
+  .count .background-time {
+    background-image: url(../images/graphics/background_layer_with_blur_black.png);
+    background-size: auto auto;
+    background-position: center;
+    background-repeat: repeat-x;
+    overflow: hidden;
+    height: 300px;
+    position: relative; }
+    .count .background-time .timeholder {
+      position: relative;
+      padding-top: 80px;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%; }
+    .count .background-time #timeTitle {
+      font-family: Snell Roundhand;
+      color: #FFF;
+      opacity: 0.5;
+      font-size: 40px;
+      margin-bottom: 0px; }
+    .count .background-time #time {
+      color: #FFF;
+      opacity: 0.8;
+      font-size: 80px;
+      margin-bottom: 0px; }
+    .count .background-time #subtime {
+      color: #FFF;
+      opacity: 0.5;
+      font-size: 20px; }
+
+.bride-groom {
+  position: relative;
+  top: 100px;
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+  .bride-groom #above-intro-text {
+    color: #010101;
+    font-family: Georgia;
+    opacity: 0.7;
+    font-size: 30px; }
+
+.intro {
+  margin-top: 100px;
+  height: 600px;
+  width: 100%; }
+  .intro .people-holder {
+    width: 700px;
+    height: 100vh;
+    margin: 0 auto; }
+    .intro .people-holder .jeni {
+      width: 50%;
+      height: 100%;
+      float: left;
+      text-align: center; }
+      .intro .people-holder .jeni .jimage {
+        height: 30vh;
+        width: 30vh;
+        margin: 0 auto;
+        opacity: 0;
+        border-radius: 150px;
+        transform: translate(-50px, 0px);
+        transition: all 0.4s ease-in-out;
+        background-size: contain;
+        background-image: url(../images/graphics/her_2.png);
+        background-color: inherit;
+        background-repeat: no-repeat;
+        background-position: relative; }
+      .intro .people-holder .jeni .jimage:hover {
+        filter: gray;
+        -webkit-transition: all .8s ease-in-out;
+        -webkit-filter: grayscale(1);
+        -webkit-transform: scale(1.09); }
+      .intro .people-holder .jeni #jname {
+        margin-top: 5%;
+        color: #010101;
+        font-family: Georgia;
+        opacity: 0.4;
+        font-size: 15px;
+        opacity: 0;
+        transform: translate(-50px, 0px);
+        transition: all 0.4s ease-in-out; }
+      .intro .people-holder .jeni .jtext {
+        position: relative;
+        left: 5%;
+        height: 50%;
+        width: 90%;
+        border-radius: 15px;
+        opacity: 0;
+        transform: translate(0px, -50px);
+        transition: all 0.4s ease-in-out;
+        background-color: #EFEEEE; }
+        .intro .people-holder .jeni .jtext .jbackground {
+          position: relative;
+          top: 5%;
+          left: 5%;
+          height: 90%;
+          width: 90%; }
+          .intro .people-holder .jeni .jtext .jbackground #jenisays {
+            opacity: 0.7;
+            color: #010100;
+            font-size: 20px; }
+          .intro .people-holder .jeni .jtext .jbackground #jenidetails {
+            opacity: 0.5;
+            color: #010100;
+            font-size: 17px; }
+      .intro .people-holder .jeni .j-read-delivered {
+        position: relative;
+        left: 6%;
+        height: 2%;
+        width: 35%;
+        opacity: 0.4;
+        text-align: left; }
+        .intro .people-holder .jeni .j-read-delivered #text-status {
+          opacity: 1;
+          color: #010100;
+          font-size: 15px; }
+      .intro .people-holder .jeni .jtext-writing {
+        position: relative;
+        top: 2%;
+        left: 5%;
+        height: 5%;
+        width: 25%;
+        opacity: 0;
+        float: left;
+        border-radius: 45px;
+        text-align: center;
+        transform: translate(0px, -50px);
+        transition: all 0.4s ease-in-out;
+        background-color: #EFEEEE; }
+        .intro .people-holder .jeni .jtext-writing .jtext-writing-doc0, .intro .people-holder .jeni .jtext-writing .jtext-writing-doc1, .intro .people-holder .jeni .jtext-writing .jtext-writing-doc2 {
+          margin-left: 15%;
+          margin-top: 10%;
+          height: 2vh;
+          width: 2vh;
+          float: left;
+          border-radius: 10px;
+          background-color: #cbcace; }
+        .intro .people-holder .jeni .jtext-writing .jtext-writing-doc1 {
+          background-color: #cbcace; }
+        .intro .people-holder .jeni .jtext-writing .jtext-writing-doc2 {
+          background-color: #cbcace; }
+    .intro .people-holder .bhau {
+      width: 50%;
+      height: 100%;
+      float: left;
+      text-align: center; }
+      .intro .people-holder .bhau .bimage {
+        height: 30vh;
+        width: 30vh;
+        margin: 0 auto;
+        opacity: 0;
+        transform: translate(50px, 0px);
+        transition: all 0.4s ease-in-out;
+        border-radius: 150px;
+        background-size: contain;
+        background-image: url(../images/graphics/him_2.png);
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: relative; }
+      .intro .people-holder .bhau .bimage:hover {
+        filter: gray;
+        -webkit-transition: all .8s ease-in-out;
+        -webkit-filter: grayscale(1);
+        -webkit-transform: scale(1.09); }
+      .intro .people-holder .bhau #bname {
+        margin-top: 5%;
+        color: #010101;
+        font-family: Georgia;
+        opacity: 0.4;
+        font-size: 15px;
+        opacity: 0;
+        transform: translate(50px, 0px);
+        transition: all 0.4s ease-in-out; }
+      .intro .people-holder .bhau .btext {
+        position: relative;
+        height: 50%;
+        width: 90%;
+        border-radius: 15px;
+        opacity: 0;
+        transform: translate(0px, -50px);
+        transition: all 0.4s ease-in-out;
+        background-color: #80ccff; }
+        .intro .people-holder .bhau .btext .bbackground {
+          position: relative;
+          top: 5%;
+          left: 5%;
+          height: 90%;
+          width: 90%; }
+          .intro .people-holder .bhau .btext .bbackground #bhausays {
+            opacity: 0.7;
+            color: #010100;
+            font-size: 20px; }
+          .intro .people-holder .bhau .btext .bbackground #baudetails {
+            opacity: 0.5;
+            color: #010100;
+            font-size: 17px; }
+      .intro .people-holder .bhau .b-read-delivered {
+        position: relative;
+        height: 2%;
+        width: 90%;
+        opacity: 0.4;
+        text-align: right; }
+        .intro .people-holder .bhau .b-read-delivered #text-status {
+          opacity: 1;
+          color: #010100;
+          font-size: 15px; }
+      .intro .people-holder .bhau .btext-writing {
+        position: relative;
+        top: 2%;
+        right: 10%;
+        height: 5%;
+        width: 25%;
+        opacity: 0;
+        float: right;
+        border-radius: 45px;
+        text-align: center;
+        transform: translate(0px, -50px);
+        transition: all 0.4s ease-in-out;
+        background-color: #80ccff; }
+        .intro .people-holder .bhau .btext-writing .btext-writing-doc0, .intro .people-holder .bhau .btext-writing .btext-writing-doc1, .intro .people-holder .bhau .btext-writing .btext-writing-doc2 {
+          margin-left: 15%;
+          margin-top: 10%;
+          height: 2vh;
+          width: 2vh;
+          float: left;
+          border-radius: 10px;
+          background-color: #008ae6; }
+        .intro .people-holder .bhau .btext-writing .btext-writing-doc1 {
+          background-color: #008ae6; }
+        .intro .people-holder .bhau .btext-writing .btext-writing-doc2 {
+          background-color: #008ae6; }
+
+.invite-cover {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: 100px auto;
+  left: 0;
+  right: 0;
+  background-size: contain;
+  background-image: url(../images/graphics/invite_front.png);
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: relative; }
+
+.invite-pages {
+  height: 1700px;
+  width: 100%;
+  margin: 200px auto;
+  position: absolute;
+  z-index: -2; }
+  .invite-pages .invite-page-1 {
+    height: 350px;
+    width: 350px;
+    margin: 50px auto;
+    text-align: center;
+    background-opacity: 1;
+    background-color: gold; }
+    .invite-pages .invite-page-1 .haldi-text-holder {
+      display: inline-block;
+      margin: 25% auto;
+      background-color: none; }
+      .invite-pages .invite-page-1 .haldi-text-holder #haldi {
+        margin-top: 20px;
+        color: #010101;
+        font-family: Snell Roundhand;
+        opacity: 0.7;
+        font-size: 60px; }
+      .invite-pages .invite-page-1 .haldi-text-holder #haldi-time-date {
+        margin-top: -5px;
+        color: #010101;
+        opacity: 0.4;
+        font-size: 15px; }
+  .invite-pages .invite-page-2 {
+    height: 350px;
+    width: 350px;
+    margin: 50px auto;
+    text-align: center;
+    background-opacity: 1;
+    background-color: LightCoral; }
+    .invite-pages .invite-page-2 .garba-text-holder {
+      display: inline-block;
+      margin: 25% auto;
+      background-color: none; }
+      .invite-pages .invite-page-2 .garba-text-holder #garba {
+        margin-top: 20px;
+        color: #010101;
+        font-family: Snell Roundhand;
+        opacity: 0.7;
+        font-size: 60px; }
+      .invite-pages .invite-page-2 .garba-text-holder #garba-time-date {
+        margin-top: -5px;
+        color: #010101;
+        opacity: 0.4;
+        font-size: 15px; }
+  .invite-pages .invite-page-3 {
+    height: 350px;
+    width: 350px;
+    margin: 50px auto;
+    text-align: center;
+    background-opacity: 1;
+    background-color: IndianRed; }
+    .invite-pages .invite-page-3 .wedding-text-holder {
+      display: inline-block;
+      margin: 12% auto;
+      background-color: none; }
+      .invite-pages .invite-page-3 .wedding-text-holder #wedding {
+        margin-top: -20px;
+        color: #010101;
+        font-family: Snell Roundhand;
+        opacity: 0.7;
+        font-size: 60px; }
+      .invite-pages .invite-page-3 .wedding-text-holder #wedding-time-date {
+        margin-top: -25px;
+        color: #010101;
+        opacity: 0.4;
+        font-size: 15px; }
+  .invite-pages .invite-page-4 {
+    height: 350px;
+    width: 350px;
+    margin: 50px auto;
+    text-align: center;
+    background-opacity: 1;
+    background-color: SteelBlue; }
+    .invite-pages .invite-page-4 .reception-text-holder {
+      display: inline-block;
+      margin: 25% auto;
+      background-color: none; }
+      .invite-pages .invite-page-4 .reception-text-holder #reception {
+        margin-top: 20px;
+        color: #010101;
+        font-family: Snell Roundhand;
+        opacity: 0.7;
+        font-size: 60px; }
+      .invite-pages .invite-page-4 .reception-text-holder #reception-time-date {
+        margin-top: -5px;
+        color: #010101;
+        opacity: 0.4;
+        font-size: 15px; }
+
+.our-story {
+  height: 250px;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  margin-top: 550px;
+  text-align: center; }
+  .our-story #our-story-title {
+    position: relative;
+    padding-top: 60px;
+    font-family: Snell Roundhand;
+    font-size: 50px;
+    color: white; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #000; }
+  .timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit; }
+  .timeline ul li div {
+    position: relative;
+    bottom: 0;
+    margin-top: -120px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #D3D3D3; }
+    .timeline ul li div #header {
+      margin-top: -30px;
+      font-size: 60px;
+      font-weight: 100; }
+    .timeline ul li div #details {
+      font-size: 13px; }
+    .timeline ul li div #data {
+      margin-top: -10px;
+      font-size: 13px;
+      line-height: 100%; }
+    .timeline ul li div::before {
+      content: '';
+      position: absolute;
+      bottom: 7px;
+      width: 0;
+      height: 0;
+      border-style: solid; }
+  .timeline ul li:nth-child(odd) div {
+    left: 45px; }
+    .timeline ul li:nth-child(odd) div::before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent #D3D3D3 transparent transparent; }
+  .timeline ul li:nth-child(even) div {
+    text-align: right;
+    left: -289px; }
+    .timeline ul li:nth-child(even) div::before {
+      right: -15px;
+      border-width: 8px 0 8px 16px;
+      border-color: transparent transparent transparent #D3D3D3; }
+
+.place-holder-for-div {
+  height: 2700px; }
+
+.footer-holder {
+  width: 100%; }
+  .footer-holder .images-wedding {
+    width: 100%;
+    float: left; }
+    .footer-holder .images-wedding .image-holder-title {
+      height: 200px;
+      background-color: black;
+      position: relative;
+      margin-top: 10px;
+      text-align: center; }
+      .footer-holder .images-wedding .image-holder-title #images-title {
+        position: relative;
+        padding-top: 70px;
+        font-family: Snell Roundhand;
+        font-size: 50px;
+        color: white; }
+    .footer-holder .images-wedding .image-holder-content-box {
+      position: relative;
+      text-align: center; }
+      .footer-holder .images-wedding .image-holder-content-box .image-holder-response-autoresize {
+        width: 100%; }
+        .footer-holder .images-wedding .image-holder-content-box .image-holder-response-autoresize .image-holder-response {
+          -webkit-transition: all .8s ease-in-out;
+          width: 24.9vw;
+          height: 24.5vw;
+          float: left; }
+          .footer-holder .images-wedding .image-holder-content-box .image-holder-response-autoresize .image-holder-response .g1 {
+            width: 25vw;
+            height: 25vw;
+            background-size: contain;
+            background-image: url(../images/baujeni/g1.JPG);
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: relative; }
+          .footer-holder .images-wedding .image-holder-content-box .image-holder-response-autoresize .image-holder-response .g2 {
+            width: 25vw;
+            height: 25vw;
+            background-size: contain;
+            background-image: url(../images/baujeni/g2.PNG);
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: relative; }
+          .footer-holder .images-wedding .image-holder-content-box .image-holder-response-autoresize .image-holder-response .g3 {
+            width: 25vw;
+            height: 25vw;
+            background-size: contain;
+            background-image: url(../images/baujeni/g3.JPG);
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: relative; }
+          .footer-holder .images-wedding .image-holder-content-box .image-holder-response-autoresize .image-holder-response .g4 {
+            width: 25vw;
+            height: 25vw;
+            background-size: contain;
+            background-image: url(../images/baujeni/g4.JPG);
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: relative; }
+          .footer-holder .images-wedding .image-holder-content-box .image-holder-response-autoresize .image-holder-response .g5 {
+            width: 25vw;
+            height: 25vw;
+            background-size: contain;
+            background-image: url(../images/baujeni/g8.PNG);
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: relative; }
+          .footer-holder .images-wedding .image-holder-content-box .image-holder-response-autoresize .image-holder-response .g6 {
+            width: 25vw;
+            height: 25vw;
+            background-size: contain;
+            background-image: url(../images/baujeni/g6.PNG);
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: relative; }
+          .footer-holder .images-wedding .image-holder-content-box .image-holder-response-autoresize .image-holder-response .g7 {
+            width: 25vw;
+            height: 25vw;
+            background-size: contain;
+            background-image: url(../images/baujeni/g7.PNG);
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: relative; }
+          .footer-holder .images-wedding .image-holder-content-box .image-holder-response-autoresize .image-holder-response .g8 {
+            width: 25vw;
+            height: 25vw;
+            background-size: contain;
+            background-image: url(../images/baujeni/g5_.JPG);
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: relative; }
+        .footer-holder .images-wedding .image-holder-content-box .image-holder-response-autoresize .image-holder-response:hover {
+          filter: gray;
+          -webkit-transition: all .8s ease-in-out;
+          -webkit-filter: grayscale(1);
+          -webkit-transform: scale(1.09); }
+  .footer-holder .post-gallary-holder {
+    height: 10px;
+    width: 100%;
+    background-color: black;
+    float: left; }
+  .footer-holder .some-desing {
+    position: relative;
+    float: left;
+    height: 500px;
+    width: 100%;
+    background-color: white; }
+    .footer-holder .some-desing .thanks-you-holder {
+      text-align: center;
+      margin-top: 25%;
+      margin-left: 10%;
+      margin-right: 10%; }
+      .footer-holder .some-desing .thanks-you-holder #thank-you-parents {
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: -25px;
+        color: #010101;
+        opacity: 0.5;
+        font-size: 20px;
+        font-weight: 100; }
+      .footer-holder .some-desing .thanks-you-holder #thank-you {
+        font-family: Snell Roundhand;
+        margin-top: -15%;
+        color: #010101;
+        opacity: 0.2;
+        font-size: 130px;
+        font-weight: 100; }
+  .footer-holder .contact-us {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    float: left; }
+    .footer-holder .contact-us .direction-header {
+      height: 70px;
+      width: 100%;
+      background-color: black;
+      text-align: center; }
+      .footer-holder .contact-us .direction-header #direction-title {
+        position: relative;
+        padding-top: 5px;
+        font-family: Snell Roundhand;
+        font-size: 50px;
+        color: white; }
+    .footer-holder .contact-us .direction {
+      height: 0;
+      width: 100%;
+      text-align: center;
+      float: left; }
+      .footer-holder .contact-us .direction .left-text {
+        width: 100%;
+        float: left; }
+        .footer-holder .contact-us .direction .left-text .addr {
+          height: 0;
+          width: 33vw;
+          float: left; }
+          .footer-holder .contact-us .direction .left-text .addr .one-Hall {
+            margin-top: 25%;
+            margin-left: 20%;
+            text-align: center; }
+        .footer-holder .contact-us .direction .left-text #addr-text-r, .footer-holder .contact-us .direction .left-text #addr-text-h, .footer-holder .contact-us .direction .left-text #addr-text-u {
+          font-family: Snell Roundhand;
+          margin-top: -15px;
+          color: #010101;
+          opacity: 0.3;
+          font-size: 25px; }
+  .footer-holder .footer-box {
+    height: 0;
+    width: 100%;
+    background-color: blue;
+    float: left; }
+  .footer-holder .author {
+    height: 15px;
+    width: 100%; }
+    .footer-holder .author .author-holder {
+      float: right;
+      margin-right: 30px; }
+      .footer-holder .author .author-holder #name-author {
+        font-family: 'Times New Roman', Times, serif;
+        color: #010101;
+        opacity: 1;
+        font-size: 15px; }
+
+@media screen and (max-width: 600px) {
+  .logo {
+    height: 150px;
+    width: 150px;
+    z-index: 4;
+    background-size: 100% 100%;
+    background-background-color: inherit;
+    background-image: url(../images/graphics/logo_jb_21.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -75px; }
+  .count .background-time .timeholder #timeTitle {
+    font-size: 25px; }
+  .count .background-time .timeholder #time {
+    font-size: 30px; }
+  .count .background-time .timeholder #subtime {
+    font-size: 10px; }
+  .bride-groom #above-intro-text {
+    font-size: 20px; }
+  .intro .people-holder {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto; }
+    .intro .people-holder .jeni .jimage {
+      height: 20vh;
+      width: 20vh;
+      border-radius: 75px;
+      margin: 0 auto; }
+    .intro .people-holder .jeni .jtext {
+      height: 70%; }
+      .intro .people-holder .jeni .jtext .jbackground #jenisays {
+        opacity: 0.7;
+        color: #010100;
+        font-size: 17px; }
+      .intro .people-holder .jeni .jtext .jbackground #jenidetails {
+        opacity: 0.5;
+        color: #010100;
+        font-size: 15px; }
+    .intro .people-holder .jeni .jtext-writing {
+      width: 30%; }
+      .intro .people-holder .jeni .jtext-writing .jtext-writing-doc0, .intro .people-holder .jeni .jtext-writing .jtext-writing-doc1, .intro .people-holder .jeni .jtext-writing .jtext-writing-doc2 {
+        margin-left: 10%;
+        margin-top: 12%;
+        height: 2vh;
+        width: 2vh;
+        float: left;
+        border-radius: 10px;
+        background-color: #008ae6; }
+      .intro .people-holder .jeni .jtext-writing .jtext-writing-doc1 {
+        background-color: #008ae6; }
+      .intro .people-holder .jeni .jtext-writing .jtext-writing-doc2 {
+        background-color: #008ae6; }
+    .intro .people-holder .bhau .bimage {
+      border-radius: 75px;
+      height: 20vh;
+      width: 20vh;
+      margin: 0 auto; }
+    .intro .people-holder .bhau .btext {
+      height: 70%; }
+      .intro .people-holder .bhau .btext .bbackground #bausays {
+        opacity: 0.7;
+        color: #010100;
+        font-size: 17px; }
+      .intro .people-holder .bhau .btext .bbackground #baudetails {
+        opacity: 0.5;
+        color: #010100;
+        font-size: 15px; }
+    .intro .people-holder .bhau .btext-writing {
+      width: 30%; }
+      .intro .people-holder .bhau .btext-writing .btext-writing-doc0, .intro .people-holder .bhau .btext-writing .btext-writing-doc1, .intro .people-holder .bhau .btext-writing .btext-writing-doc2 {
+        margin-left: 10%;
+        margin-top: 12%;
+        height: 2vh;
+        width: 2vh;
+        float: left;
+        border-radius: 10px;
+        background-color: #008ae6; }
+      .intro .people-holder .bhau .btext-writing .btext-writing-doc1 {
+        background-color: #008ae6; }
+      .intro .people-holder .bhau .btext-writing .btext-writing-doc2 {
+        background-color: #008ae6; }
+  .content article #names {
+    color: #010101;
+    font-family: Georgia;
+    opacity: 0.7;
+    font-size: 40px; }
+  .content article #wedding-details {
+    margin-top: -20px;
+    color: #010101;
+    opacity: 0.5;
+    font-size: 15px;
+    margin-bottom: 0px; }
+  .content article #city-name {
+    margin-top: -20px;
+    color: #010101;
+    opacity: 0.4;
+    font-size: 20px; }
+  .content article #date-wedding {
+    margin-top: -20px;
+    color: #010101;
+    opacity: 0.4;
+    font-size: 15px; }
+  .place-holder-for-div {
+    height: 2790px; }
+  .invite-cover {
+    height: 350px;
+    width: 350px; }
+  .invite-pages {
+    height: 1700; }
+    .invite-pages .invite-page-1 {
+      height: 350px;
+      width: 250px;
+      margin: 50px auto; }
+    .invite-pages .invite-page-2 {
+      height: 350px;
+      width: 250px;
+      margin: 50px auto; }
+    .invite-pages .invite-page-3 {
+      height: 350px;
+      width: 250px;
+      margin: 50px auto; }
+    .invite-pages .invite-page-4 {
+      height: 350px;
+      width: 250px;
+      margin: 50px auto; }
+  .timeline ul li {
+    width: 3px; }
+    .timeline ul li::after {
+      width: 15px;
+      height: 15px; }
+    .timeline ul li div {
+      width: 150px;
+      padding: 7px; }
+      .timeline ul li div #details {
+        font-size: 10px; }
+    .timeline ul li:nth-child(odd) div {
+      left: 25px; }
+    .timeline ul li:nth-child(even) div {
+      left: -169px; } }
